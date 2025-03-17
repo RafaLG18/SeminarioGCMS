@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copiar o arquivo HTML para o diretório de conteúdo do Nginx
-COPY index.html /usr/share/nginx/html/index.html
+COPY ./simple-web-app/index.html /usr/share/nginx/html/index.html
 
 # Expor a porta 80
 EXPOSE 80
