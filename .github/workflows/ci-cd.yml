@@ -22,7 +22,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          #context: .
-          file: ./Dockerfile
+          context: .
+          file: ./simple-web-app/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simple-web-app:latest
